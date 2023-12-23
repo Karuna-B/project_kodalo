@@ -4,8 +4,7 @@
     <meta name="viewport" content="with=device-width, initial scale=1.0">
     <title>Kodalo</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
 
 </head>
 <body>
@@ -15,16 +14,17 @@
             <div class="logo">
                 <a href="">KODALO</a>
             </div>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Resources</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
-
+            <i class="fa fa-bars" onclick="showmenu()"></i>
         </nav>
 
     <div class="text-box">
@@ -34,6 +34,50 @@
     </div>
     </section>
 
-    
+
+    <!-- our services -->
+   <section class="services">
+        <h1>Services We Provide</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sunt eos laborum quisquam alias aperiam iusto saepe molestias. Vitae repellendus nemo distinctio suscipit voluptate consectetur</p>
+
+        <div class="row">
+            <div class="service_col">
+                <h3>Consulatation</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic harum esse iste nesciunt eum, aliquid eaque excepturi voluptatem, veniam culpa maiores est r</p>
+            </div>
+
+            <div class="service_col">
+                <h3>Crop Cycle</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic harum esse iste nesciunt eum, aliquid eaque excepturi voluptatem, veniam culpa maiores est r</p>
+            </div>
+
+            <div class="service_col">
+                <h3>Market Prediction</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic harum esse iste nesciunt eum, aliquid eaque excepturi voluptatem, veniam culpa maiores est r</p>
+            </div>
+
+            <div class="service_col">
+                <h3>Stories</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic harum esse iste nesciunt eum, aliquid eaque excepturi voluptatem, veniam culpa maiores est r</p>
+            </div>
+        </div>
+
+   </section>
+
+
+
+
+    <script>
+
+        var navLinks= document.getElementById("navLinks");
+        function showmenu(){
+            navLinks.style.right="0";
+        }
+
+        function hidemenu(){
+            navLinks.style.right="-200px";
+        }
+
+    </script>
 </body>
 </html>
